@@ -18,8 +18,9 @@ const WebcamList = props => {
         )}
       </button>
       {props.webcams &&
-        props.webcams.map(cam => <Webcam key={cam.name} webcam={cam} />)}
-    </>
+        <Webcam key={props.webcams.date} webcam={props.webcams} />}
+        {/* props.webcams.map(cam => <Webcam key={cam.date} webcam={cam} />)} */}
+        </>
   );
 };
 
